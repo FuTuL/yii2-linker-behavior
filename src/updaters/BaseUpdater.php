@@ -4,8 +4,8 @@ namespace voskobovich\linker\updaters;
 
 use voskobovich\linker\interfaces\LinkerBehaviorInterface;
 use voskobovich\linker\interfaces\UpdaterInterface;
-use yii\base\Behavior;
 use yii\base\BaseObject;
+use yii\base\Behavior;
 use yii\db\ActiveQuery;
 
 /**
@@ -59,7 +59,7 @@ abstract class BaseUpdater extends BaseObject implements UpdaterInterface
      *
      * @param ActiveQuery $value
      */
-    public function setRelation(ActiveQuery $value)
+    public function setRelation($value)
     {
         $this->relation = $value;
     }

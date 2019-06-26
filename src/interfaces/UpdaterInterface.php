@@ -28,7 +28,7 @@ interface UpdaterInterface
      *
      * @param ActiveQuery $value
      */
-    public function setRelation(ActiveQuery $value);
+    public function setRelation($value);
 
     /**
      * Get relation object.
